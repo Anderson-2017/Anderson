@@ -1,0 +1,245 @@
+:root{
+    --primary-color: #6246EA;
+    --secondary-color: #E45858;
+    --tertiary-color: #ffffff;
+    --quaternary-color: #F8F8FF;
+    --primary-text-color: #000000;
+}
+
+*{
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+
+#header{
+    background-color: var(--quaternary-color);
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+#header img{
+    position: absolute;
+}
+
+.image-01{
+    top: 0;
+    left: 0;
+    width: 30%;
+    object-fit: cover;
+}
+
+.image-02{
+    bottom: 0;
+    right: 0;
+    width: 45%;
+    object-fit: cover;
+}
+
+.title{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    z-index: 1;
+}
+
+.title h3{
+    color: var(--secondary-color);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.title h1{
+    font-size: 48px;
+    width: 650px;
+}
+
+.title span{
+    color: var(--primary-color);
+}
+
+
+.search-select {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    background-color: var(--tertiary-color);
+    padding: 30px 40px;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  .search-wrapper {
+    position: relative;
+  }
+
+  .search-select input,
+  .search-select select {
+    padding: 20px 150px 20px 35px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--quaternary-color);
+    color: var(--primary-text-color);
+    min-width: 220px;
+    font-size: 14px;
+  }
+
+  .search-select i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: var(--secondary-color);
+    font-size: 20px;
+    pointer-events: none;
+  }
+
+  .search-select button {
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    border: none;
+    padding: 20px 30px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .search-select button:hover {
+    background-color: #4c2bd9;
+  }
+
+  #cards{
+    display: flex;
+    flex-direction: column;
+    margin: 10rem 23rem;
+    gap: 2.5rem;
+  }
+
+.menu-card{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.menu-card h2{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+
+.cards-box{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.map-list{
+    display: flex;
+    gap: 1rem;
+    background-color: var(--tertiary-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    padding: 8px;
+}
+
+.map-list .list{
+    background-color: var(--primary-color);
+    border: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: var(--tertiary-color);
+    padding: 6px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.map-list .list:hover{
+    background-color: #4c2bd9;
+}
+
+.map-list .map{
+    background-color: var(--tertiary-color);
+    border: none;
+    font-size: 14px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    padding: 6px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Cards */
+
+  .card {
+    width: 365px; 
+    background-color: var(--tertiary-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    padding-bottom: 23px; 
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    display: block;
+  }
+  
+  .card h2 {
+    font-size: 18px; 
+    font-weight: bold;
+    padding: 18px 18px 0 18px; 
+    margin: 0;
+    color: var(--primary-text-color);
+  }
+  
+  .card p {
+    padding: 20px 18px 9px 18px; 
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .card .location {
+    display: flex;
+    align-items: center;
+    padding-left: 18px;
+    padding-top: 8px;
+  }
+  
+  .card .location p {
+    padding-left: 9px;
+    padding-bottom: 20px;
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .card .location i {
+    font-size: 20.5px; 
+    color: var(--secondary-color);
+    display: inline-block;
+  }
+  
